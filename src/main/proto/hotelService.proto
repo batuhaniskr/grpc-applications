@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.example.demo;
+
+message HotelRequest {
+    int32 id = 1;
+    string hotelName = 2;
+}
+
+message HotelResponse {
+    string hotelText = 1;
+}
+
+service HotelService {
+    rpc getHotel(HotelRequest) returns (HotelResponse);
+}
