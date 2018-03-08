@@ -35,7 +35,8 @@ or you can using maven plugin. </br>
 Created HotelService.java for implementation all operations.
 </br>
 <li>Now, You need to start the GrpcServer.java. Server runs on port 8080.</li>
-<b>Console message </b>
+</br>
+<b>Console message of Server</b>
 <pre>Server started</pre>
 </br>
 <li>Client.java runs for the consuming service. </li>
