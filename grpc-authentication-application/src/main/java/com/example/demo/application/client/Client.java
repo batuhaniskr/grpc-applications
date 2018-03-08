@@ -15,7 +15,7 @@ public class Client {
 
     public static void main(String[] args) throws InterruptedException {
 
-        String jwt = createJwt(Constant.JWT_SECRET, "authClient", "rayt");
+        String jwt = createJwt(Constant.JWT_SECRET, "authClient", "test");
         System.out.println("Created a JWT:" + jwt);
         JwtCallCredential callCredential = new JwtCallCredential(jwt);
 
