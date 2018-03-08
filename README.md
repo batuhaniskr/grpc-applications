@@ -35,6 +35,9 @@ or you can using maven plugin. </br>
 Created HotelService.java for implementation all operations.
 </br>
 <li>Now, You need to start the GrpcServer.java. Server runs on port 8080.</li>
+<b>Console message </b>
+<pre>Server started</pre>
+</br>
 <li>Client.java runs for the consuming service. </li>
 
 ## gRPC Client with Python
@@ -64,9 +67,15 @@ json web token based grpc authentication secure application
 
 <li>Client.java runs for the consuming service. </li>
 </br>
-<b>Console message: </b>
+<b>Console message of Client: </b>
 <pre>
 Created a JWT:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoQ2xpZW50Iiwic3ViIjoidGVzdCIsImV4cCI6MTUyMDUxNDYwMSwiaWF0IjoxNTIwNTE0NTQxfQ.pfS9QvP4UBje55WRmb2zMY7wspEYmI3UygG2Fy5VlK8
 localhost:8080
 Responce received from server: hotelText: "Hotel, id: 1  name: Washington"
 </pre>
+<br>
+<b>Console message of GrpcServer: </b>
+
+<pre>Server started
+id: 1
+hotelName: "Washington"</pre>
