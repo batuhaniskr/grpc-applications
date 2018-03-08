@@ -57,8 +57,7 @@ Client.java runs for the consuming service.
 
 ## gRPC Authentication Application
 
-grpc authentication secure application json web token authentication based.
-
+json web token based grpc authentication secure application
 <pre>cd grpc-authentication-application</pre>
 Close the server in the previous application.
 
@@ -71,6 +70,3 @@ Created a JWT:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoQ2xpZW50Iiwic
 localhost:8080
 Responce received from server: hotelText: "Hotel, id: 1  name: Washington"
 </pre>
-
-
-
