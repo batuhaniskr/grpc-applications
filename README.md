@@ -1,10 +1,10 @@
 # gRPC-applications
 
-Sample gRPC Java And Python client - server application and gRPC authentication application
+Sample gRPC Java And Python client - server applications and gRPC authentication application
  
 ## gRPC Sample Application
 
-gRPC Sample application based client-server model of remote procedure call.
+gRPC Sample unsecure application based client-server model of remote procedure call.
 
 hotelService.proto
 
@@ -54,4 +54,23 @@ Client.java runs for the consuming service.
 
 <pre>$ python client.py</pre>
 <pre> hotelText: "Hotel, id: 1  name: testHotel"</pre>
+
+## gRPC Authentication Application
+
+grpc authentication secure application json web token authentication based.
+
+<pre>cd grpc-authentication-application</pre>
+Close the server in the previous application.
+
+You need to start the GrpcServer.java. Server runs on port 8080.
+
+Client.java runs for the consuming service.
+<b>Console message: </b>
+<pre>
+Created a JWT:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoQ2xpZW50Iiwic3ViIjoidGVzdCIsImV4cCI6MTUyMDUxNDYwMSwiaWF0IjoxNTIwNTE0NTQxfQ.pfS9QvP4UBje55WRmb2zMY7wspEYmI3UygG2Fy5VlK8
+localhost:8080
+Responce received from server: hotelText: "Hotel, id: 1  name: Washington"
+</pre>
+
+
 
