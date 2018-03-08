@@ -46,7 +46,7 @@ Client.java runs for the consuming service.
 
 <pre>python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. hotelService.proto</pre>
 
-<li>hotelService_pb2.py contains message classes. <li>
+<li>hotelService_pb2.py contains message classes. </li>
 
 <li>hotelService_pb2_grpc.py contains server and client classes. </li>
 
