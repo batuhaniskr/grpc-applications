@@ -33,8 +33,24 @@ If you will do project, you can use command:
 
 or you can using maven plugin. </br>
 Created HotelService.java for implementation all operations.
-
-
-Now, You need to start the GrpcServer.java. Server runs on port 8080.
-
 </br>
+Now, You need to start the GrpcServer.java. Server runs on port 8080.
+</br>
+Client.java runs for the consuming service.
+
+## gRPC Client with Python
+
+### Prerequisites
+<pre>cd grpc-sample-applications/grpc-python-client/</pre>
+<pre>pip install -r requirements.txt</pre>
+
+<pre>python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. hotelService.proto</pre>
+
+<li>hotelService_pb2.py contains message classes. <li>
+
+<li>hotelService_pb2_grpc.py contains server and client classes. </li>
+
+<li>Added client.py for consume the service</li>
+
+<pre>$ python client.py<br> hotelText: "Hotel, id: 1  name: testHotel"</pre>
+
