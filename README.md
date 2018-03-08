@@ -1,12 +1,12 @@
 # gRPC-applications
 
-Sample gRPC Java And Python client - server applications and gRPC authentication application
+Sample gRPC Java And Python client - server application and gRPC authentication application 
  
 ## gRPC Sample Application
 
 gRPC Sample unsecure application based client-server model of remote procedure call.
 
-hotelService.proto
+<b>hotelService.proto </b>
 
 <pre>
 syntax = "proto3";
@@ -27,16 +27,15 @@ service HotelService {
 }
 </pre>
 
-If you will do project, you can use command:
+If you will do project from scratch, you can use command:
 
 <pre>protoc -I=$SRC_DIR --java_out=$DST_DIR $SRC_DIR/HelloService.proto</pre>
 
 or you can using maven plugin. </br>
 Created HotelService.java for implementation all operations.
 </br>
-Now, You need to start the GrpcServer.java. Server runs on port 8080.
-</br>
-Client.java runs for the consuming service.
+<li>Now, You need to start the GrpcServer.java. Server runs on port 8080.</li>
+<li>Client.java runs for the consuming service. </li>
 
 ## gRPC Client with Python
 
@@ -51,7 +50,7 @@ Client.java runs for the consuming service.
 <li>hotelService_pb2_grpc.py contains server and client classes. </li>
 
 <li>Added client.py for consume the service</li>
-
+</br>
 <pre>$ python client.py</pre>
 <pre> hotelText: "Hotel, id: 1  name: testHotel"</pre>
 
@@ -59,11 +58,11 @@ Client.java runs for the consuming service.
 
 json web token based grpc authentication secure application
 <pre>cd grpc-authentication-application</pre>
-Close the server in the previous application.
+<li>Close the server in the previous application. </li>
 
-You need to start the GrpcServer.java. Server runs on port 8080.
+<li>You need to start the GrpcServer.java. Server runs on port 8080. </li>
 
-Client.java runs for the consuming service.
+<li>Client.java runs for the consuming service. </li>
 <b>Console message: </b>
 <pre>
 Created a JWT:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoQ2xpZW50Iiwic3ViIjoidGVzdCIsImV4cCI6MTUyMDUxNDYwMSwiaWF0IjoxNTIwNTE0NTQxfQ.pfS9QvP4UBje55WRmb2zMY7wspEYmI3UygG2Fy5VlK8
