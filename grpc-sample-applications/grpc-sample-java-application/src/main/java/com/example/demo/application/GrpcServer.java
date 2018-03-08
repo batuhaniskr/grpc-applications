@@ -1,8 +1,8 @@
-package com.example.demo.application;
+package com.example.demo.Application;
 
+import com.example.demo.HotelService;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import io.grpc.ServerInterceptors;
 
 import java.io.IOException;
 

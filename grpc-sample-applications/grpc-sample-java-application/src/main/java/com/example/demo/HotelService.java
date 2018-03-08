@@ -1,4 +1,4 @@
-package com.example.demo.application;
+package com.example.demo;
 
 import com.example.demo.HotelRequest;
 import com.example.demo.HotelResponse;
