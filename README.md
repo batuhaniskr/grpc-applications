@@ -52,5 +52,6 @@ Client.java runs for the consuming service.
 
 <li>Added client.py for consume the service</li>
 
-<pre>$ python client.py<br> hotelText: "Hotel, id: 1  name: testHotel"</pre>
+<pre>$ python client.py</pre>
+<pre> hotelText: "Hotel, id: 1  name: testHotel"</pre>
 
