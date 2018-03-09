@@ -23,6 +23,8 @@ service HotelService {
 }
 </pre>
 
+You need to use the <a href="https://github.com/google/protobuf/releases">proto3</a> compiler.
+
 If you will do project from scratch, you can use command:
 
 <pre>protoc -I=$SRC_DIR --java_out=$DST_DIR $SRC_DIR/HelloService.proto</pre>
