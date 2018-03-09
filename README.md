@@ -41,7 +41,7 @@ Created HotelService.java for implementation all operations.
 </br>
 <li>Client.java runs for the consuming service. </li>
 
-## gRPC Client with Python
+### gRPC Client with Python
 
 ### Prerequisites
 <pre>cd grpc-sample-applications/grpc-python-client/</pre>
