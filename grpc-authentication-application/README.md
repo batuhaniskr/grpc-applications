@@ -1,6 +1,32 @@
 ## gRPC Authentication Application
 
 json web token based grpc authentication secure application
+
+<b>hotelService.proto </b>
+
+<pre>
+syntax = "proto3";
+option java_multiple_files = true;
+package com.example.demo;
+
+message HotelRequest {
+    int32 id = 1;
+    string hotelName = 2;
+}
+
+message HotelResponse {
+    string hotelText = 1;
+}
+
+service HotelService {
+    rpc getHotel(HotelRequest) returns (HotelResponse);
+}
+</pre>
+
+If you will do project from scratch, you can use command:
+
+<pre>protoc -I=$SRC_DIR --java_out=$DST_DIR $SRC_DIR/HelloService.proto</pre>
+
 <pre>cd grpc-authentication-application</pre>
 <li>Close the server in the previous application. </li>
 
